@@ -82,3 +82,4 @@ service URL.
 The app and its SQLite database run locally. Install dependencies with `npm install` while online before disconnecting; startup does not need internet once the dependencies are present. Gemini AI, Google Maps, Google Fonts, and remotely hosted Unsplash photos do require internet and will be unavailable or use font/image fallbacks while offline.
 "# st-slas" 
 "# st-slas" 
+"# saint" 
