@@ -84,3 +84,4 @@ The app and its SQLite database run locally. Install dependencies with `npm inst
 "# st-slas" 
 "# saint" 
 "# saint" 
+"# st-slas" 
