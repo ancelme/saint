@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: st-silas-school-management
+    runtime: node
+    plan: starter
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/system/health
+    disk:
+      name: st-silas-school-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SQLITE_FILE_PATH
+        value: /var/data/st_silas.sqlite
+      - key: JWT_SECRET
+        generateValue: true
